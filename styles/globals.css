@@ -3,4 +3,23 @@
 @tailwind utilities;
 
 
+.beach{
+    height: 900px;
+}
 
+.jprompt{
+    position: absolute;
+    top: 18%;
+}
+
+.tagline{
+    text-shadow: 0.5px 0.5px black;
+}
+
+.slogan{
+    height: 640px;
+}
+
+.callAction{
+    line-height: 3rem;
+}
