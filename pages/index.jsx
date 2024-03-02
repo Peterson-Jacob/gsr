@@ -1,5 +1,6 @@
-import Weather from "./components/weather";
 import Header from "./components/header";
+import Jumbo from "./components/jumbo";
+import Slogan from "./components/slogan";
 
 
 
@@ -7,7 +8,9 @@ export default function Home() {
   return (
     <>
     <Header />
-    <Weather />
+    <Jumbo />
+    <Slogan />
+   
     </>
   );
 }
