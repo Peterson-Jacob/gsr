@@ -23,3 +23,8 @@
 .callAction{
     line-height: 3rem;
 }
+
+.pickupDiv, .dateupDiv{
+   
+    height: 68px;
+}
