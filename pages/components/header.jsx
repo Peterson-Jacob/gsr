@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
       <>
-        <header className="flex w-full bg-white py-1 border-b-4 border-red-600">
+        <header className="sticky top-0 z-10 flex w-full bg-white py-1 border-b-4 border-red-600">
 
        
         <div className="mx-2 lg:hidden hamburger">
@@ -64,8 +64,12 @@ export default function Header() {
                     <li className="inline-block my-4 mx-4 font-bold">Join</li>
                 </ul>
             </div>
+
+            
            
         </header>
+
+        
       </>
     );
   }
