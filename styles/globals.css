@@ -17,7 +17,7 @@
 }
 
 .slogan{
-    height: 640px;
+    max-height: 640px;
 }
 
 .callAction{
@@ -27,4 +27,26 @@
 .pickupDiv, .dateupDiv{
    
     height: 68px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .jprompt{
+        top: 11%;
+    }
+
+
+    .beach{
+        height: 550px;
+    }
+
+    .rentPrompt{
+        height: 460px;
+    }
+    
+    .callAction{
+        line-height: 1.5rem;
+    }
+   
+
 }
