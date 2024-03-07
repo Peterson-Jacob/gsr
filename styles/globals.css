@@ -50,3 +50,14 @@
    
 
 }
+
+@media only screen and (min-width: 1950px) {
+
+    .max{
+        position: relative;
+        width: 1950px;
+        margin: 0 auto;
+    }
+}
+
+
