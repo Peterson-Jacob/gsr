@@ -43,6 +43,8 @@ export default function Header() {
                 </div>}
             </div>
         </div>
+        
+        
             <div className="flex-auto">
                 <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8">Gash</h1>
             </div>
@@ -64,6 +66,7 @@ export default function Header() {
                     <li className="inline-block my-4 mx-4 font-bold">Join</li>
                 </ul>
             </div>
+       
 
             
            
