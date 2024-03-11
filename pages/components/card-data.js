@@ -23,6 +23,12 @@ export const cardList = [{
     name: 'four',
     header: 'Earn towards free retals and more with Gash Rewards.',
     action: 'Gash Rewards members benfit from the start.',
-    select: 'Explore Rewards'
+    select: 'Explore Rewards',
+},
+{
+    name: 'five',
+    header: 'AAA memebers: Save up to 50% off rates.*',
+    action: 'Great moments start here. Lets Go!',
+    select: 'Book Now',
 }
 ]
