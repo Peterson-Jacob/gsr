@@ -2,6 +2,7 @@ import Header from "./components/header";
 import Jumbo from "./components/jumbo";
 import Slogan from "./components/slogan";
 import Cardselect from "./components/card-section";
+import Rewards from "./components/rewards-section";
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
     <Jumbo />
     <Slogan />
     <Cardselect />
+    <Rewards />
    
     </>
   );
