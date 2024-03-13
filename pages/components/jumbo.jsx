@@ -15,7 +15,7 @@ export default function Jumbo(){
                 <div className='w-11/12 my-0 mx-auto 2xl:w-3/4'>
                     <h1 className='text-3xl font-bold text-white lg:font-semibold lg:text-5xl tagline'>Dash Away. Gash Rental Car!</h1>
                 </div>
-                <div className='w-11/12 my-6 lg:my-10 mx-auto bg-white lg:h-52 lg:rounded lg:shadow-lg lg:shadow-black lg:border-b-4 lg:border-red-600 2xl:w-3/4 rentPrompt'>
+                <div className='w-11/12 z-0 my-6 lg:my-10 mx-auto bg-white lg:h-52 lg:rounded lg:shadow-lg lg:shadow-black lg:border-b-4 lg:border-red-600 2xl:w-3/4 rentPrompt'>
 
                     <div className='flex flex-wrap lg:flex-nowrap lg:w-11/12 my-0 lg:mx-auto'>
                         <div className=' flex-initial w-full text-center lg:text-left lg:w-2/3 '>
