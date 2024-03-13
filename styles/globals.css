@@ -29,6 +29,18 @@
     height: 68px;
 }
 
+.card{
+    width: 425px;
+}
+
+.rewardHeader{
+    line-height: 4rem;
+}
+
+.rewardAction{
+    line-height: 3rem;
+}
+
 @media only screen and (max-width: 1024px) {
 
     .jprompt{
@@ -57,6 +69,7 @@
         position: relative;
         width: 1950px;
         margin: 0 auto;
+      
     }
 }
 
