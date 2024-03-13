@@ -14,17 +14,18 @@ function Part({index}){
 
     return(
 
-    <div className="relative w-full my-12 mx-auto bg-white rounded shadow-md shadow-black overflow-hidden sm:w-2/5 lg:w-64  card">
-        <Image src={image[index]}  className="w-full h-64 lg:h-40"/>
+    <div className="relative  my-12 mx-auto bg-white rounded shadow-md shadow-black overflow-hidden sm:w-1/2 sm:mx-4 lg:w-1/4 2xl:w-1/5 2xl:mx-auto  card">
+        <Image src={image[index]}  className="w-full h-64 lg:h-48"/>
     <div className='bg-red-600 w-full h-1'></div>
 
-    <div className='w-11/12 my-0 mx-auto'>
+    <div className='w-11/12 h-32 my-0 mx-auto sm:h-40'>
         <h2 className='text-xl font-bold my-4'>{card.header}</h2>
         <p className='my-4 pb-4'>{card.action}</p>
     </div>
 
-    <div className='bg-slate-100 w-11/12 my-0 mx-auto h-0.5'></div>
-    <p className='py-3 text-center text-blue-500 text-xl '>{card.select}</p>
+        <div className=' bg-slate-100 w-11/12 my-0 mx-auto h-0.5'></div>
+        <p className='py-3 text-center text-blue-500 text-xl '>{card.select}</p>
+    
  </div>
     )
 }
@@ -93,20 +94,21 @@ export default function Cardselect(){
 
     return(
         <>
-            <div className="bg-slate-100 w-full " >
+        <div className="bg-slate-100 w-full " >
+            <div className='max'>
                 <div>
-                    <h1 className="text-center text-3xl pt-10 px-4 lg:text-5xl">Wander off path, Embrace the Journey.</h1>
+                    <h1 className="text-center text-3xl pt-10 px-4 font-semibold sm:text-4xl lg:text-5xl">Wander off path, Embrace the Journey.</h1>
                 </div>
                 
                 <div className='flex flex-wrap w-11/12 my-0 mx-auto sm:hidden '>
                         <Part index={index} />       
                 </div>
-                <div className='hidden flex-wrap w-11/12 my-0 mx-auto sm:flex lg:hidden'>
+                <div className='hidden w-full my-0 mx-auto sm:flex lg:hidden'>
                 
                             <Part index={index} />
                             <Part index={index + 1} />       
                 </div>
-                    <div className='hidden  flex-wrap w-11/12 my-0 mx-auto lg:flex lg:flex-inline lg:w-full'>
+                    <div className='hidden  my-0 mx-auto lg:flex lg:w-full'>
                             <Part index={0} />
                             <Part index={1} />   
                             <Part index={2} />   
@@ -122,12 +124,13 @@ export default function Cardselect(){
                 
                 </div>
 
-                <div className='hidden w-1/3 my-4 mx-auto pb-12  sm:flex lg:hidden'>
+                <div className='hidden w-1/5 my-4 mx-auto pb-12  sm:flex lg:hidden'>
                     <div className={`w-4 h-4 my-0 mx-auto rounded-full cursor-pointer ${firstTwoClicked ? 'bg-red-500' : 'bg-black'}`}  onClick={firstTwo}></div>
                     <div className={`w-4 h-4 my-0 mx-auto rounded-full cursor-pointer ${lastTwoClicked ? 'bg-red-500' : 'bg-black'}`} onClick={lastTwo} ></div>
                 
                 </div> 
             </div>
+        </div>
         </>
     )
 }
