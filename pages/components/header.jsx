@@ -11,9 +11,9 @@ export default function Header() {
 
     return (
       <>
-        <header className="sticky top-0 z-10 flex w-full bg-white py-1 border-b-4 border-red-600">
+        <header className="sticky top-0 z-10 bg-white py-1 border-b-4 border-red-600">
 
-       
+        <div className='max flex w-full'>       
         <div className="mx-2 lg:hidden hamburger">
             <div className="mt-5 w-7 my-0 mx-auto borderBar" onClick={handleShow}>
                 <div className="w-7 h-0.5 bg-black m-1.5 duration-75 barOne"></div>
@@ -22,7 +22,7 @@ export default function Header() {
             </div>
             <div>
             {Show &&
-                <div className='absolute block left-0 w-full h-full bg-slate-50 text-black'>
+                <div className='fixed block z-50 left-0 w-full h-full bg-slate-50 text-black'>
                 <ul className="">
                     <li className="text-lg font-semibold my-4 mx-4 py-4 border-t-4 border-b-4 border-black">Rent</li>
                     <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Manage Rental</li>
@@ -69,7 +69,7 @@ export default function Header() {
        
 
             
-           
+           </div>
         </header>
 
         
