@@ -33,13 +33,7 @@
     width: 425px;
 }
 
-.rewardHeader{
-    line-height: 4rem;
-}
 
-.rewardAction{
-    line-height: 3rem;
-}
 
 @media only screen and (max-width: 1024px) {
 
@@ -60,16 +54,23 @@
         line-height: 1.5rem;
     }
    
-
 }
+
 
 @media only screen and (min-width: 1950px) {
 
     .max{
         position: relative;
         width: 1950px;
-        margin: 0 auto;
-      
+        margin: 0 auto; 
+    }
+
+    .mapMax{
+        max-width: 1600px;
+    }
+
+    .beach{
+        box-shadow: 1px 1px 0px black;
     }
 }
 
