@@ -11,7 +11,7 @@ export default function Jumbo(){
                 <Image src={beach} alt="picture provided by Nubia Navarro" className="w-full beach"/>
             </div>
 
-            <div className='relative w-full jprompt'>
+            <div className=' w-full jprompt'>
                 <div className='w-11/12 my-0 mx-auto 2xl:w-3/4'>
                     <h1 className='text-3xl font-bold text-white lg:font-semibold lg:text-5xl tagline'>Dash Away. Gash Rental Car!</h1>
                 </div>
