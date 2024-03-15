@@ -69,6 +69,10 @@
         max-width: 1600px;
     }
 
+    .footerMax{
+        max-width: 1500px;
+    }
+
     .beach{
         box-shadow: 1px 1px 0px black;
     }
