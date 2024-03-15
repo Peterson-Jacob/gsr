@@ -4,7 +4,8 @@ import Slogan from "./components/slogan";
 import Cardselect from "./components/card-section";
 import Rewards from "./components/rewards-section";
 import Map from "./components/map-section";
-
+import Close from "./components/closer";
+import Footer from "./components/footer";
 
 
 
@@ -17,6 +18,8 @@ export default function Home() {
     <Cardselect />
     <Rewards />
     <Map />
+    <Close />
+    <Footer />
    
    
     </>
