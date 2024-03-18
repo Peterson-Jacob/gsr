@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-
 export default function Header() {
 
     const [Show, setShow] = useState(false);
@@ -46,7 +45,7 @@ export default function Header() {
         
         
             <div className="flex-auto">
-                <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8">Gash</h1>
+                <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8 logo">Gash</h1>
             </div>
             <div className="flex-auto hidden lg:block">
                 <ul>
