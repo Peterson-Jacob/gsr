@@ -11,11 +11,12 @@ function Part({index}){
     
     let card = cardList[index];
     const image = [bmw, jeep, hyun, mazda, bmw];
+    
 
     return(
 
     <div className="relative  my-12 mx-auto bg-white rounded shadow-md shadow-black overflow-hidden sm:w-1/2 sm:mx-4 lg:w-1/4 2xl:w-1/5 2xl:mx-auto  card">
-        <Image src={image[index]}  className="w-full h-64 lg:h-48"/>
+        <Image src={image[index]} alt={card.name}  className="w-full h-64 lg:h-48"/>
     <div className='bg-red-600 w-full h-1'></div>
 
     <div className='w-11/12 h-32 my-0 mx-auto sm:h-40'>
