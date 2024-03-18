@@ -6,6 +6,7 @@ import Rewards from "./components/rewards-section";
 import Map from "./components/map-section";
 import Close from "./components/closer";
 import Footer from "./components/footer";
+import City from "./components/city-section";
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
     <Cardselect />
     <Rewards />
     <Map />
+    <City />
     <Close />
     <Footer />
    
