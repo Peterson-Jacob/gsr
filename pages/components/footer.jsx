@@ -7,39 +7,40 @@ export default function Footer(){
         <>
             <div className="w-full bg-slate-100">
 
-                <div>
-                    <h2 className="text-xl sm:text-2xl font-bold pt-16 pb-4 text-center">Dash Away. Gash Rental Car!</h2>
+                <div className="max">
 
-                    <div className="w-11/12 my-0 pb-8 mx-auto">
-                        <p className="text-xs sm:text-sm sm:text-center py-2"> 
+                    <h2 className="text-xl sm:text-2xl font-bold pt-16 pb-4 text-center lg:text-3xl">Dash Away. Gash Rental Car!</h2>
+
+                    <div className="w-11/12 my-0 pb-8 mx-auto  border-b-2 border-red-500  lg:w-3/4 xl:border-none xl:w-3/5">
+                        <p className="text-xs sm:text-sm  py-2"> 
                             At Gash Car Rental, we boast an extensive vehicle fleet, strategic locations,
                              and a dedication to exemplary service, ensuring your business trips, vacations, 
                              or special events exceed all expectations.
                         </p>
                         
-                        <p className="text-xs sm:text-sm sm:text-center py-2">
+                        <p className="text-xs sm:text-sm  py-2">
                             For more than a century, Gash has been devoted to meeting our customers' mobility
                             requirements, ensuring we provide the perfect rental car for your individual circumstances.  
                         </p>
 
                     
-                        <ul className="text-xs text-left w-5/6 sm:text-sm sm:w-2/3 my-0 mx-auto py-2 list-disc">
+                        <ul className="text-xs  w-5/6 sm:text-sm sm:w-2/3 my-0 mx-auto py-2 list-disc">
                              <li className="py-1">Transitioning into your brand-new dream home? Rent a pickup truck or a box truck to expedite the moving process.</li>
                              <li className="py-1"> Browse through our array of luxury cars to discover the ideal match for your occasion.</li>
                              <li className="py-1">Choose one of our electric vehicles for your rental and contribute to a greener way of living.</li>
                         </ul>
 
-                        <p className="text-xs sm:text-sm sm:text-center py-2">
+                        <p className="text-xs sm:text-sm  py-2">
                             Regardless of whether it's your inaugural rental or your hundredth, we aim to ensure that you 
                             feel appreciated and rewarded every time. That's why we created an award-winning loyalty program called <span className="text-blue-500">Gash Rental Rewards.</span>
                         </p>
 
-                        <p className="text-xs sm:text-sm sm:text-center py-2">
+                        <p className="text-xs sm:text-sm  py-2">
                         Gain access to exclusive perks, special offers, and accumulate points towards complimentary upgrades and
                         rental days simply by inputting your member number during checkout. And yes, joining is absolutely free!   
                         </p>    
                        
-                        <p className="text-xs sm:text-sm sm:text-center py-2">
+                        <p className="text-xs sm:text-sm  py-2">
                             Don't hesitate any longer! Transform "no time" into "go time" and kickstart your car rental reservation with Gash today. 
                         </p>
                        
@@ -48,8 +49,8 @@ export default function Footer(){
 
                 </div>
 
-            <div className="flex flex-wrap w-11/12 my-0 mx-auto lg:w-5/6 lg:pb-32  footerMax">
-                <div className="flex-initial w-40 my-4 mx-auto">
+            <div className="flex flex-wrap w-11/12 my-0 mx-auto lg:w-5/6 lg:pb-20  footerMax">
+                <div className="flex-initial w-32 my-4 mx-auto">
                    <h3 className="text-lg font-bold ">Gash.com</h3>
                     <ul>
                         <li className="text-sm cursor-pointer my-1">Rental</li>
@@ -60,7 +61,7 @@ export default function Footer(){
                     </ul>
                 </div>
 
-                <div className="flex-initial w-40 my-4 mx-auto">
+                <div className="flex-initial w-32 my-4 mx-auto">
                    <h3 className="text-lg font-bold ">Top Locations</h3>
                     <ul>
                         <li className="text-sm cursor-pointer my-1">Los Angeles</li>
@@ -74,7 +75,7 @@ export default function Footer(){
                     </ul>
                 </div>
                 
-                <div className="flex-initial w-40 my-4 mx-auto">
+                <div className="flex-initial w-32 my-4 mx-auto">
                    <h3 className="text-lg font-bold">About</h3>
                     <ul>
                         <li className="text-sm cursor-pointer my-1">Investor</li>
@@ -85,7 +86,7 @@ export default function Footer(){
                     </ul>
                 </div>
 
-                <div className="flex-initial w-40 my-4 mx-auto ">
+                <div className="flex-initial w-32 my-4 mx-auto ">
                    <h3 className="text-lg font-bold">Support</h3>
                     <ul>
                         <li className="text-sm cursor-pointer my-1">Contact Us</li>
@@ -99,7 +100,7 @@ export default function Footer(){
                     </ul>
                 </div>
 
-                <div className="flex-initial w-40 my-4 mx-auto "> 
+                <div className="flex-initial w-32 my-4 mx-auto "> 
                    <h3 className="text-lg font-bold ">Traveler Resources</h3>
                     <ul>
                         <li className="text-sm cursor-pointer my-1">Travel Blog</li>
@@ -109,8 +110,12 @@ export default function Footer(){
                         <li className="text-sm cursor-pointer my-1">Customers with Disabilites</li>
                     </ul>
                 </div>
-                
+
+              
             </div>
+                <div className="max">
+                    <p className="text-sm text-center font-semibold pb-6">Gash was created by Jacob Peterson. 2024 </p>
+                </div> 
             </div>
         </>
     );
