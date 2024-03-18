@@ -5,7 +5,7 @@ export default function Map(){
 
     return(
         <>
-            <div className='relative mb-64 lg:mb-80'>
+            <div className='relative mb-56 lg:mb-80'>
                 <Image src={map} alt="map of southeastern United States" className="w-full h-80 lg:h-96 map"/>
 
             
