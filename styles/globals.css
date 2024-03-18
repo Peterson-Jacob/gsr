@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .beach{
     height: 900px;
 }
@@ -53,6 +52,8 @@
     .callAction{
         line-height: 1.5rem;
     }
+
+
    
 }
 
