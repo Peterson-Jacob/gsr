@@ -1,9 +1,23 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import beach from "./images/beach-car.jpg";
 
 
 
 export default function Jumbo(){
+
+    const [select, setSelect] = useState(true);
+
+    function handle(){
+        if(select === true){
+            setSelect(false)
+        }else{
+            setSelect(true)
+        }
+
+    }
+
+
     return(
         <>
         <div className='max'>
@@ -19,9 +33,9 @@ export default function Jumbo(){
 
                     <div className='flex flex-wrap lg:flex-nowrap lg:w-11/12 my-0 lg:mx-auto'>
                         <div className=' flex-initial w-full text-center lg:text-left lg:w-2/3 '>
-                            <select className='my-2 mr-4 py-0.5 border-2 rounded lg:mt-7' id="drop-off">
-                                <option value="same">Same Drop-off Location</option>
-                                <option value="differnt">Differnt Drop-off Location</option>
+                            <select className='my-2 mr-4 py-0.5 border-2 rounded lg:mt-7' id="drop-off" onChange={handle}>
+                                <option value="same" >Same Drop-off Location</option>
+                                <option value="differnt" >Differnt Drop-off Location</option>
                             </select>
                             <p className='text-lg text-blue-600 font-semibold inline-block'>Discount Code</p>
                         </div>
@@ -33,11 +47,12 @@ export default function Jumbo(){
 
                     <div className='flex flex-wrap w-full lg:flex-nowrap lg:w-11/12 my-0 mx-auto'>
                         
-                            <div className='relative flex-initial w-full lg:w-4/5 mr-0 mt-3 px-11 py-5 border-2 rounded pickupDiv'>
+                        
+                            <div className={`relative flex-initial lg:w-4/5 mr-0 mt-3 px-11 py-5 border-2 rounded pickupDiv ${select ? 'w-full' : 'w-1/2'}`} >
                                 <span className='absolute top-0 left-0 mt-1 ml-1 text-sm text-slate-400 font-bold'>Pick-up Location</span>
                                 <input type="text" className='absolute w-11/12 mt-2 mb-0 ml-1 text-xl left-0  outline-none'  />
                             </div>
-                            <div className='hidden relative flex-initial w-1/2 lg:w-4/5 mr-0 mt-3 px-11 py-5 border-2 rounded pickupDiv'>
+                            <div className={`relative flex-initial w-1/2 lg:w-4/5 mr-0 mt-3 px-11 py-5 border-2 rounded pickupDiv ${select ? 'hidden' : 'block'}`}>
                                 <span className='absolute top-0 left-0 mt-1 ml-1 text-sm text-slate-400 font-bold'>Drop-off Location</span>
                                 <input type="text" className='absolute w-11/12 mt-2 mb-0 ml-1 text-xl left-0  outline-none'  />
                             </div>
