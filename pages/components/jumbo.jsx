@@ -1,20 +1,52 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import beach from "./images/beach-car.jpg";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 
 
-export default function Jumbo(){
+export default function Test(){
 
     const [select, setSelect] = useState(true);
-
+    const [dateup, setDateup] = useState(new Date());
+    const [calendaropen, setCalendaropen ] = useState(true);
+    const [dropdate, setDropdate] = useState(new Date());
+    const [calendardrop, setCalendardrop ] = useState(true);
+  
+    
+  
     function handle(){
         if(select === true){
             setSelect(false)
         }else{
             setSelect(true)
+        
         }
 
+    }
+
+    function handleopenCalendar(){
+        
+        if(calendaropen === true){
+            setCalendaropen(false)
+            setCalendardrop(true)
+           
+        }else{
+            setCalendaropen(true)
+            
+           
+        }
+    }
+
+    function handledropCalendar(){
+        
+        if(calendardrop === true){
+            setCalendardrop(false)
+            setCalendaropen(true)
+        }else{
+            setCalendardrop(true)
+        }
     }
 
 
@@ -59,10 +91,11 @@ export default function Jumbo(){
                     
 
 
-                        <div className='relative flex-initial w-1/2 lg:w-1/4 lg:ml-4 mr-0 mt-3 px-11 py-5 border-2 rounded dateupDiv'>
+                        <div className='relative flex-initial w-1/2 lg:w-1/4 lg:ml-4 mr-0 mt-3 px-11 py-5 border-2 rounded dateupDiv' >
                             <span className='absolute top-0 left-0 mt-1 ml-1 text-sm text-slate-400 font-bold'>Pick-up Date</span>
-                            <input type="text" className='absolute w-11/12 mt-2 mb-0 ml-1 text-xl left-0  outline-none '  />
+                            <input type="text" className='absolute w-11/12 mt-2 mb-0 ml-1 text-xl left-0  outline-none ' onClick={handleopenCalendar} value={dateup.getMonth() + 1 + "/" + dateup.getDate() + "/" + dateup.getFullYear()} />    
                         </div>
+                       
                         
                         <div className='relative flex-initial w-1/2 lg:w-1/4 lg:mr-4 mt-3 px-11 py-5 border-2 rounded dateupDiv'>
                                 <span className='absolute top-0 left-0 mt-1 ml-1 text-sm text-slate-400 font-bold'>Pick-up Time</span>
@@ -84,7 +117,7 @@ export default function Jumbo(){
 
                         <div className='relative flex-initial w-1/2 lg:w-1/4 mr-0 mt-3 px-11 py-5 border-2 rounded dateupDiv'>
                             <span className='absolute top-0 left-0 mt-1 ml-1 text-sm text-slate-400 font-bold'>Drop-off Date</span>
-                            <input type="text" className='absolute w-11/12 mt-2 mb-0 ml-1 text-xl left-0  outline-none'  />
+                            <input type="text" className='absolute w-11/12 mt-2 mb-0 ml-1 text-xl left-0  outline-none' onClick={handledropCalendar} value={dropdate.getMonth() + 1 + "/" + dropdate.getDate() + "/" + dropdate.getFullYear()} />
                         </div>
                         
                         <div className='relative flex-initial w-1/2 lg:w-1/4 lg:mr-4 mt-3 px-11 py-5 border-2 rounded dateupDiv'>
@@ -108,6 +141,12 @@ export default function Jumbo(){
                         <div className='relative flex-initial w-full lg:w-1/4 lg:mr-4 mt-3 px-11 py-5 bg-red-600 cursor-pointer hover:shadow hover:shadow-black dateupDiv'>
                             <p className='text-xl font-bold text-white text-center'>Continue</p>
                         </div>
+                    </div>
+                    <div className={` ${calendaropen ? 'hidden' : 'block'}`}>
+                            <Calendar onChange={setDateup} value={dateup} className='my-2 mx-auto ' onClickDay={handleopenCalendar} />
+                    </div>
+                    <div className={` ${calendardrop ? 'hidden' : 'block'}`}>
+                            <Calendar onChange={setDropdate} value={dropdate} className='my-2 mx-auto' onClickDay={handledropCalendar} />
                     </div>
                 </div>
             </div>
