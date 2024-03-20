@@ -22,8 +22,7 @@ export default function Home() {
     <City />
     <Close />
     <Footer />
-   
-   
+    
     </>
   );
 }
