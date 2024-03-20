@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Image from 'next/image';
+import logo from "./images/logo.png";
 
 export default function Header() {
 
@@ -45,7 +47,8 @@ export default function Header() {
         
         
             <div className="flex-auto">
-                <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8 logo">Gash</h1>
+                {/* <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8 logo">Gash</h1> */}
+                <Image src={logo} className='w-20 mt-1 mx-auto lg:w-24 2xl:w-28' />
             </div>
             <div className="flex-auto hidden lg:block">
                 <ul>
