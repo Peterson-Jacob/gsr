@@ -16,7 +16,7 @@ function Component({index}){
     const city = ["Denver", "Los Angeles", "Orlando", "San Deigo", "Las Vegas", "Miami", "New York", "Phoenix", "Denver", "Los Angeles", "Orlando"]; 
 
     return(
-    <div className="relative  my-12 mx-4 bg-white rounded shadow-md shadow-black overflow-hidden sm:w-1/2 sm:mx-4 lg:w-1/4 2xl:w-1/5 2xl:mx-auto  card">
+    <div className="relative flex-initial w-full my-12 mx-auto bg-white rounded shadow-md shadow-black overflow-hidden sm:w-1/2 sm:mx-4 lg:w-1/4 2xl:w-1/5 2xl:mx-auto  card">
             <Image src={image[index]} alt={city[index]}  className="w-full h-48 lg:h-48"/>
         <div className='bg-red-600 w-full h-1'></div>
 
@@ -116,10 +116,14 @@ export default function City(){
                     <h1 className="text-center text-3xl pt-10 px-4 font-semibold sm:text-4xl lg:text-5xl">Top U.S. Locations</h1>
                 </div>
                 
-                <div className='flex w-3/4 my-0 mx-auto  sm:hidden '>
-                    <Component index={index}/> 
-                     
-                </div>
+            <div className='flex sm:hidden '>
+                <div className='flex-initial w-1/6 my-auto mx-auto h-24 text-center' onClick={preClick}><h1 className='my-5 text-7xl cursor-pointer text-black'>&#129088;</h1></div>
+            
+                    <Component index={index}/>    
+            
+                <div className='flex-initial w-1/6 my-auto mx-auto h-24 text-center' onClick={nextClick}><h1 className='my-5 text-7xl cursor-pointer text-black'>&#129090;</h1></div>
+            </div>
+
                 <div className='hidden w-full my-0 mx-auto sm:flex sm:w-5/6 lg:hidden'>
                     <Component index={index}/> 
                     <Component index={index + 1}/> 
@@ -134,13 +138,6 @@ export default function City(){
                         <Component index={index + 3}/>      
                     </div> 
                 
-            <div className='flex w-3/5 my-0 mx-auto sm:hidden'>
-                <div className=' bg-red-600 w-1/4 mx-auto text-white text-center text-xl font-bold py-0.5 rounded-md cursor-pointer'onClick={preClick}><p>Prev</p></div>
-                <div className=' bg-red-600 w-1/4 mx-auto text-white text-center text-xl font-bold py-0.5 rounded-md cursor-pointer' onClick={nextClick}><p>Next</p></div>
-
-            </div>
-
-
             <div className='hidden w-1/3 my-4 mx-auto pb-12 sm:flex lg:hidden'>
                 <div className={`w-4 h-4 my-0 mx-auto rounded-full cursor-pointer ${div1Clicked ? 'bg-red-500' : 'bg-black'}`}  onClick={oneClick}></div>
                 <div className={`w-4 h-4 my-0 mx-auto rounded-full cursor-pointer ${div2Clicked ? 'bg-red-500' : 'bg-black'}`} onClick={twoClick} ></div>
