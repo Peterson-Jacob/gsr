@@ -12,8 +12,8 @@ export default function Rewards(){
                 Discover the excitement as you bypass the counter and go straight to your vehicle.
                  Earn points along the way, bringing you closer to free rental days and exciting upgrades.* </p>
 
-                <div className="w-10/12 py-4 my-6 mx-auto bg-red-600 lg:w-96 lg:py-6 ">
-                    <p className="text-center text-white text-2xl font-bold">Join for Free</p>
+                <div className="w-10/12 py-4 my-6 mx-auto bg-red-600 lg:w-96 lg:py-6 hover:shadow-md hover:shadow-black cursor-pointer">
+                    <p className="text-center text-white text-2xl font-bold ">Join for Free</p>
                 </div>
 
                 <p className="w-11/12 mt-0 mb-24 mx-auto text-center text-sm lg:w-2/5 lg:mt-10 lg:mb-16 ">
