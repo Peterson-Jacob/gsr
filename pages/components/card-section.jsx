@@ -15,7 +15,7 @@ function Part({index}){
 
     return(
 
-    <div className="relative  my-12 mx-auto bg-white rounded shadow-md shadow-black overflow-hidden sm:w-1/2 sm:mx-4 lg:w-1/4 2xl:w-1/5 2xl:mx-auto  card">
+    <div className="relative  my-12 mx-auto bg-white rounded shadow-md shadow-black sm:hover:shadow-lg sm:hover:shadow-black overflow-hidden sm:w-1/2 sm:mx-4 lg:w-1/4 2xl:w-1/5 2xl:mx-auto  card">
         <Image src={image[index]} alt={card.name}  className="w-full h-64 lg:h-48"/>
     <div className='bg-red-600 w-full h-1'></div>
 
