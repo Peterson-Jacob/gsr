@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .beach{
     height: 900px;
 }
@@ -15,13 +16,8 @@
     text-shadow: 0.5px 0.5px black;
 }
 
-.slogan{
-    max-height: 640px;
-}
 
-.callAction{
-    line-height: 3rem;
-}
+
 
 .pickupDiv, .dateupDiv{
    
@@ -49,10 +45,7 @@
         height: 460px;
     }
     
-    .callAction{
-        line-height: 1.5rem;
-    }
-
+ 
 
    
 }
