@@ -23,7 +23,7 @@ export default function Header() {
             </div>
             <div>
             {Show &&
-                <div className='fixed block z-50 left-0 w-full h-full bg-slate-50 text-black'>
+                <div className='fixed block z-50 mt-5 left-0 w-full h-full bg-slate-50 text-black'>
                 <ul className="">
                     <li className="text-lg font-semibold my-4 mx-4 py-4 border-t-4 border-b-4 border-black">Rent</li>
                     <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Manage Rental</li>
