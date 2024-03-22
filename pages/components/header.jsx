@@ -1,43 +1,54 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from "./images/logo.png";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Header() {
 
-    const [Show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
 
     function handleShow(){
-        setShow(!Show);
+        setShow(!show);
+
     }
+
+    useGSAP(() => {
+        if(show) {
+            gsap.to(".hamburger", {width: '100%', duration: 2});
+           // gsap.to(".item", {opacity: '100%', duration: 3, delay: 2});
+        } 
+
+    }, [show]);
 
     return (
       <>
         <header className="sticky top-0 z-10 bg-white py-1 border-b-4 border-red-600">
 
         <div className='max flex w-full'>       
-        <div className="mx-2 lg:hidden hamburger">
+        <div className="mx-2 lg:hidden">
             <div className="mt-5 w-7 my-0 mx-auto borderBar" onClick={handleShow}>
-                <div className="w-7 h-0.5 bg-black m-1.5 duration-75 barOne"></div>
-                <div className="w-7 h-0.5 bg-black m-1.5 duration-75 barTwo"></div>
-                <div className="w-7 h-0.5 bg-black m-1.5 duration-75 barThree"></div>
+                <div className={`w-7 h-0.5 bg-black m-1.5 duration-75 barOne  ${show ? '-rotate-45 translate-y-2 ' : ''}`}></div>
+                <div className={`w-7 h-0.5 bg-black m-1.5 duration-75 barOne  ${show ? 'opacity-0' : ''}`}></div>
+                <div className={`w-7 h-0.5 bg-black m-1.5 duration-75 barOne  ${show ? 'rotate-45  -translate-y-2 ' : ''}`}></div>
             </div>
             <div>
-            {Show &&
-                <div className='fixed block z-50 mt-5 left-0 w-full h-full bg-slate-50 text-black'>
+            {show &&
+                <div className='fixed block z-50 mt-5 left-0 w-0 h-full bg-white text-black overflow-hidden hamburger'>
                 <ul className="">
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-t-4 border-b-4 border-black">Rent</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Manage Rental</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Buy</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Deals</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Rewards</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Locations</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-black">Business</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4  border-b-4 border-black">Support</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Rent</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Manage Rental</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Buy</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Deals</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Rewards</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Locations</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Business</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4  border-b-4 border-red-600 ">Support</li>
 
                 <div className="flex-auto">
                 <ul className='text-center'>
-                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold">Login</li>
-                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold">Join</li>
+                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold ">Login</li>
+                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold ">Join</li>
                 </ul>
             </div>
                 </ul>
@@ -52,7 +63,7 @@ export default function Header() {
             </div>
             <div className="flex-auto hidden lg:block">
                 <ul>
-                    <li className="inline-block my-4 mx-4">Rent</li>
+                    <li className="inline-block mt-6 mx-4">Rent</li>
                     <li className="inline-block mx-4">Manage Rental</li>
                     <li className="inline-block mx-4">Buy</li>
                     <li className="inline-block mx-4">Deals</li>
@@ -64,8 +75,8 @@ export default function Header() {
             </div>
             <div className="hidden  flex-auto lg:block ">
                 <ul>
-                    <li className="inline-block my-4 mx-4 font-bold">Login</li>
-                    <li className="inline-block my-4 mx-4 font-bold">Join</li>
+                    <li className="inline-block mt-6 mx-4 font-bold">Login</li>
+                    <li className="inline-block mt-6 mx-4 font-bold">Join</li>
                 </ul>
             </div>
        
