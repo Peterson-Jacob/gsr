@@ -117,11 +117,11 @@ export default function City(){
                 </div>
                 
             <div className='flex sm:hidden '>
-                <div className='flex-initial w-1/6 my-auto mx-auto h-48 text-center' onClick={preClick}><h1 className='my-5 text-9xl font-thin cursor-pointer text-black'>&#8249;</h1></div>
+                <div className='flex-initial w-1/6 my-auto mx-auto h-48 text-center' onClick={preClick}><p className='my-5 text-9xl font-thin cursor-pointer text-black'>&#8249;</p></div>
             
                     <Component index={index}/>    
             
-                <div className='flex-initial w-1/6 my-auto mx-auto h-48 text-center' onClick={nextClick}><h1 className='my-5 text-9xl font-thin cursor-pointer text-black'>&#8250;</h1></div>
+                <div className='flex-initial w-1/6 my-auto mx-auto h-48 text-center' onClick={nextClick}><p className='my-5 text-9xl font-thin cursor-pointer text-black'>&#8250;</p></div>
             </div>
 
                 <div className='hidden w-full my-0 mx-auto sm:flex sm:w-5/6 lg:hidden'>
