@@ -97,7 +97,7 @@ export default function Cardselect(){
         <>
         <div className=" bg-slate-100 w-full " >
             <div className='max'>
-                <div className='pt-8'>
+                <div className='py-8'>
                     <h1 className="text-center text-3xl pt-10 px-4 font-semibold sm:text-4xl lg:text-5xl">Wander off path, Embrace the Journey.</h1>
                 </div>
                 
@@ -109,7 +109,7 @@ export default function Cardselect(){
                             <Part index={index} />
                             <Part index={index + 1} />       
                 </div>
-                    <div className='hidden  my-0 mx-auto pb-10 lg:flex lg:w-full'>
+                    <div className='hidden  my-0 mx-auto pb-24 lg:flex lg:w-full'>
                             <Part index={0} />
                             <Part index={1} />   
                             <Part index={2} />   
