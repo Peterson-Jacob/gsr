@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import logo from "./images/logo.png";
 import gsap from "gsap";
@@ -36,19 +37,19 @@ export default function Header() {
             {show &&
                 <div className='fixed block z-50 mt-5 left-0 w-0 h-full bg-white text-black overflow-hidden hamburger'>
                 <ul className="">
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Rent</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Manage Rental</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Buy</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Deals</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Rewards</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Locations</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 ">Business</li>
-                    <li className="text-lg font-semibold my-4 mx-4 py-4  border-b-4 border-red-600 ">Support</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Rent</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Manage Rental</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Buy</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Deals</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Rewards</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Locations</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4 border-b-4 border-red-600 cursor-pointer">Business</li>
+                    <li className="text-lg font-semibold my-4 mx-4 py-4  border-b-4 border-red-600 cursor-pointer">Support</li>
 
                 <div className="flex-auto">
                 <ul className='text-center'>
-                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold ">Login</li>
-                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold ">Join</li>
+                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold cursor-pointer">Login</li>
+                    <li className="inline-block text-lg font-semibold my-4 mx-8 font-bold cursor-pointer">Join</li>
                 </ul>
             </div>
                 </ul>
@@ -59,24 +60,24 @@ export default function Header() {
         
             <div className="flex-auto">
                 {/* <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8 logo">Gash</h1> */}
-                <Image src={logo} className='w-20 mt-1 mx-auto lg:w-24 2xl:w-28' />
+                <Link href="/"><Image src={logo} className='w-20 mt-1 mx-auto lg:w-24 2xl:w-28' /></Link>
             </div>
             <div className="flex-auto hidden lg:block">
                 <ul>
-                    <li className="inline-block mt-6 mx-4">Rent</li>
-                    <li className="inline-block mx-4">Manage Rental</li>
-                    <li className="inline-block mx-4">Buy</li>
-                    <li className="inline-block mx-4">Deals</li>
-                    <li className="inline-block mx-4">Rewards</li>
-                    <li className="inline-block mx-4">Locations</li>
-                    <li className="inline-block mx-4">Business</li>
-                    <li className="inline-block mx-4">Support</li>
+                    <li className="inline-block mt-6 mx-4 cursor-pointer">Rent</li>
+                    <li className="inline-block mx-4 cursor-pointer">Manage Rental</li>
+                    <li className="inline-block mx-4 cursor-pointer">Buy</li>
+                    <li className="inline-block mx-4 cursor-pointer">Deals</li>
+                    <li className="inline-block mx-4 cursor-pointer">Rewards</li>
+                    <li className="inline-block mx-4 cursor-pointer">Locations</li>
+                    <li className="inline-block mx-4 cursor-pointer">Business</li>
+                    <li className="inline-block mx-4 cursor-pointer">Support</li>
                 </ul>
             </div>
             <div className="hidden  flex-auto lg:block ">
                 <ul>
-                    <li className="inline-block mt-6 mx-4 font-bold">Login</li>
-                    <li className="inline-block mt-6 mx-4 font-bold">Join</li>
+                    <li className="inline-block mt-6 mx-4 font-bold cursor-pointer">Login</li>
+                    <li className="inline-block mt-6 mx-4 font-bold cursor-pointer">Join</li>
                 </ul>
             </div>
        
