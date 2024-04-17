@@ -4,7 +4,7 @@ import bmw from './images/bmw.jpg';
 import jeep from './images/jeep.jpg';
 import hyun from './images/hyundai.jpg';
 import mazda from './images/mazda.jpg';
-import { cardList } from './card-data';
+import { cardList } from '../../card-data';
 
 
 function Part({index}){
