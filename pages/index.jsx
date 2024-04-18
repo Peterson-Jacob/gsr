@@ -13,6 +13,7 @@ import City from "./components/city-section";
 export default function Home() {
   return (
     <>
+    <title>Gash Rental Car</title>
     <Header />
     <Jumbo />
     <Slogan />
