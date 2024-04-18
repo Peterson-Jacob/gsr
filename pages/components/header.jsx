@@ -60,7 +60,7 @@ export default function Header() {
         
             <div className="flex-auto">
                 {/* <h1 className="text-red-600 text-4xl text-center font-bold my-1 underline underline-offset-2 decoration-4 mx-8 logo">Gash</h1> */}
-                <Link href="/"><Image src={logo} className='w-20 mt-1 mx-auto lg:w-24 2xl:w-28' /></Link>
+                <Link href="/"><Image src={logo} alt='Gash Logo' className='w-20 mt-1 mx-auto lg:w-24 2xl:w-28' /></Link>
             </div>
             <div className="flex-auto hidden lg:block">
                 <ul>
